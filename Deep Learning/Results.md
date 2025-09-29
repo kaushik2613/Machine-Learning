@@ -1,4 +1,5 @@
 A Basic CNN
+
 The selected architecture consists of three convolutional layers with 32, 64, and 128 filters,
 each followed by max-pooling to down sample the spatial dimensions. After feature
 extraction, the network includes three fully connected layers: one with 512 units, another
@@ -13,6 +14,7 @@ approximately 60.17%, and the test loss was about 1.949
 <img width="1206" height="1075" alt="image" src="https://github.com/user-attachments/assets/a2aaeb8b-6ab9-4377-aed3-3ef9fa4ba0d7" />
 
 ResNet 18
+
 The chosen architecture for the ResNet-18 model is used for image classification with
 PyTorch Lightning. It loads a pretrained ResNet-18, modifies the final layer to output a
 custom number of classes, and tracks accuracy using torchmetrics. The model is trained with
@@ -29,6 +31,7 @@ a test loss of approximately 0.997.
 <img width="1253" height="927" alt="image" src="https://github.com/user-attachments/assets/f9fe9606-d03c-42e1-8367-89a116b59bec" />
 
 Regularization
+
 We selected the ResNet-18 (Res-18) model for its superior performance, achieving an
 accuracy of approximately 77%, compared to around 60% for the Basic CNN model.
 Additionally, the Res-18 model demonstrated a lower test loss of about 0.99, in contrast to
