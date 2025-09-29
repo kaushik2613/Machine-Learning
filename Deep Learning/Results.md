@@ -70,6 +70,8 @@ overall.
 <img width="1338" height="977" alt="image" src="https://github.com/user-attachments/assets/1d0cd496-92bf-4551-b15f-ceefa76b2ea6" />
 
 Transfer Learning
+
+
 We choose the ResNet-18 model with regression due to its high accuracy of approximately
 81%. The model is implemented using the ResNet18TransferLearning class, which is
 designed with PyTorch Lightning's `L.LightningModule`. This framework simplifies the
@@ -86,10 +88,7 @@ The training_step and validation_step methods compute the cross-entropy loss and
 accuracy, logging these metrics for both the training and validation datasets. The optimizer
 used is Adam, a widely adopted optimizer in deep learning, which updates the model's
 parameters during training.
-
-Transfer learning
-
-plays a crucial role here, as it allows the model to leverage pretrained
+Transfer learning plays a crucial role here, as it allows the model to leverage pretrained
 weights, speeding up training and improving generalization, especially when dealing with
 smaller datasets like CIFAR-10. This architecture efficiently combines the strengths of deep
 residual networks and transfer learning, making it highly effective for the CIFAR-10 task
