@@ -86,7 +86,10 @@ The training_step and validation_step methods compute the cross-entropy loss and
 accuracy, logging these metrics for both the training and validation datasets. The optimizer
 used is Adam, a widely adopted optimizer in deep learning, which updates the model's
 parameters during training.
-Transfer learning plays a crucial role here, as it allows the model to leverage pretrained
+
+Transfer learning
+
+plays a crucial role here, as it allows the model to leverage pretrained
 weights, speeding up training and improving generalization, especially when dealing with
 smaller datasets like CIFAR-10. This architecture efficiently combines the strengths of deep
 residual networks and transfer learning, making it highly effective for the CIFAR-10 task
